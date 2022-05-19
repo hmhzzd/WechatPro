@@ -1,0 +1,23 @@
+<view id="from">
+    <view id="name">
+        <input type="text" placeholder="请输入你的姓名" class="inputBox" bindinput="bindinput" bindtap="other" value="" data-key="name" />
+    </view>
+    <view id="phonenum">
+        <input type="text" placeholder="QQ/微信/手机号" class="inputBox" bindinput="bindinput" bindtap="other" value="" data-key="tel" />
+    </view>
+    <view id="type">
+        <picker id="select" bindchange="bindchange" bindtap="other" value="{{index}}" range="{{matchnames}}" data-key="matchname">
+            <view class="picker">
+                当前选择:{{matchnames[index]}}
+            </view>
+        </picker>
+    </view>
+    <view id="text1" wx:if="{{change}}">
+        <input type="text" placeholder="描述一下你的需求吧~" class="inputBox" bindtap="hasChange" bindblur="blur" value="" data-key="msg" />
+    </view>
+    <block wx:else="">
+        <textarea id="text" maxlength="100" bindinput="bindinput" bindinput="hasOver" value="" data-key="msg" placeholder="描述一下你的需求吧~"><view id="numberTips">最多输入100字哟~</view></textarea>
+    </block>
+    <button id="feedback" open-type="feedback" plain="true">没有我的比赛</button>
+    <button catchtap="submit" plain="true">提交</button>
+</view>

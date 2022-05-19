@@ -1,0 +1,40 @@
+page {
+    background-color: #c2e1fe;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+#text {
+    position: static;
+    width: 700rpx;
+    height: 400rpx;
+    margin-top: 25rpx;
+    margin-left: 13rpx;
+    background-color: #FFFAFA;
+    /* border: #6D97FF 4rpx solid; */
+    box-shadow: 0rpx 6rpx 12rpx 0rpx rgba(0, 0, 0, 0.12);
+    border-radius: 48rpx;
+    padding-left: 20rpx;
+    padding-top: 20rpx;
+}
+
+#numberTips {
+    position: relative;
+    top: 360rpx;
+    left: 480rpx;
+    font-style: italic;
+    color: gray;
+    font-size: 24rpx;
+}
+
+button:not([size="mini"]) {
+    width: 710rpx;
+    height: 80rpx;
+    line-height: 50rpx;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    background-color: #c2e1fe;
+    color: #FFFFFF;
+    box-shadow: 10rpx 16rpx 20rpx #a3d0fa,-10rpx -4rpx 20rpx #a3d0fa;
+    border-radius: 48rpx;
+}

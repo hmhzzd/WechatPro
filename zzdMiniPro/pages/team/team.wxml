@@ -1,0 +1,34 @@
+<!-- 筛选框开始 -->
+<view id="select_item">筛选</view>
+<picker id="select" bindchange="bindchange" value="{{index}}" range="{{matchnames}}" data-key="matchname" >
+    
+    <view class="picker">
+        <view>　{{matchnames[index]}}　<image id="img" src="../../incos/dpu/下拉.png"></image></view>
+    </view>
+</picker>
+<!-- 筛选框结束 -->
+<view class="teamInfo" hidden="{{!status}}">
+  <view id="item1" class='setting' wx:for="{{msg}}" wx:for-item="item" wx:key="index">
+    <view class="touxiang">
+      <image id="user" src="{{item.avatarUrl}}" mode="widthFix"></image>
+      <view id="userName">{{item.userName}}</view>
+    </view>
+    <view class="msg">
+        <view id="needDetails">{{item.needDetails}}</view>
+            <view id="matchName">比赛类型：{{item.matchName}}</view>
+            <view id="tel">联系方式
+                <view id="telDetail">：{{item.tel}}</view>
+            </view>
+            <view id="data">{{item.createdDate}}</view>
+    </view>
+  </view>
+</view>
+<!-- 后台无数据时显示的页面 -->
+<view class="container2" hidden="{{status}}">
+    <view id="imgs"> 
+    </view>
+    <text>还没有人发布组队信息哟~</text>
+    <view id="toNew">快去发布组队信息吧</view>
+</view>
+<!-- 发布按钮悬浮框 -->
+    <button id="add" bindtap="hasuserInfo" plain="true"><image src="../../incos/dpu/加号.png"></image></button>

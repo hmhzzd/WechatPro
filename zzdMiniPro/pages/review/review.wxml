@@ -1,0 +1,29 @@
+<!-- 经验详情 -->
+<view id="item1">
+    <view id="imgBox_0" wx:for="{{exList}}" wx:key="index">
+        <image id="user" src="{{exList.avatarUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="msg">{{exList.exDetails}}</view>
+</view>
+<!-- 经验里的评论 -->
+<!-- 后端接口评论数据 -->
+<view class="reviewBox" wx:for="{{list}}" wx:for-item="item" wx:key="index" hidden="{{!status}}">
+    <view class="imgBox">
+        <image class="userImg" src="{{item.avatarUrl}}"></image>
+    </view>
+    <view class="reviewMsg">{{item.details}}</view>
+</view>
+<!-- 后端无数据的时候显示的页面 -->
+<view class="container2" hidden="{{status}}">
+    <view id="imgs">
+    </view>
+    <text>还没有人发布评论哟哟~</text>
+    <view id="toNew">快去抢占顶楼吧</view>
+</view>
+<!-- 用户评论框 -->
+<view id="reviewInput">
+    <form>
+        <input type="text" placeholder="留下你的评论吧~" bindinput="bindinput" />
+        <button id="add" form-type="reset" bindtap="bindtap" plain="true" bindreset="clear">发布</button>
+    </form>
+</view>

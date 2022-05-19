@@ -1,0 +1,121 @@
+page {
+    background-color: #2b2b2b;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.data {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user {
+    width: 150rpx;
+    height: 200rpx;
+    position: relative;
+    top: 100rpx;
+    left: 300rpx;
+}
+
+#userImg {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 180rpx;
+}
+
+#userName {
+    width: 150rpx;
+    height: 40rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color: #e8ab1d;
+}
+
+.list {
+    background-color: #FFFFFF;
+    display: flex;
+    /* XR高度 */
+    height: 944rpx;
+    /* height: 694rpx; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 140rpx;
+    border-radius: 48rpx 48rpx 0 0;
+}
+
+.details {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #FFFFFF;
+    color: #2b2b2b;
+    margin-bottom: 60rpx;
+    margin-left: 20rpx;
+    border-radius: 48rpx;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+#Ex {
+    box-shadow: 0 -20rpx 32rpx 32rpx rgba(0, 0, 0, 0.07), 0 20rpx 32rpx 32rpx rgba(0, 0, 0, 0.07);
+}
+
+#teamInfo {
+    margin-top: 20rpx;
+    box-shadow: 0 -10rpx 30rpx 28rpx rgba(0, 0, 0, 0.07), 0 60rpx 30rpx 28rpx rgba(0, 0, 0, 0.07);
+}
+
+#developer {
+    box-shadow: 0 -20rpx 32rpx 32rpx rgba(0, 0, 0, 0.07), 0 20rpx 32rpx 32rpx rgba(0, 0, 0, 0.07);
+}
+
+.data view {
+    width: 20%;
+    height: 140rpx;
+    margin: 30rpx 12rpx;
+}
+
+#teamData #num {
+    font-size: 80rpx;
+}
+
+#num {
+    width: 100%;
+    height: 90rpx;
+    margin-left: 0;
+    margin-top: 0rpx;
+    text-align: center;
+    line-height: 90rpx;
+    font-size: 60rpx;
+    color: #c2e1fe;
+}
+
+#info {
+    width: 100%;
+    height: 30rpx;
+    color: #FFFFFF;
+    margin-top: -30rpx;
+    margin-left: 0px;
+    font-size: 20rpx;
+    text-align: center;
+}
+
+button:not([size="mini"]) {
+    border: none;
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #FFFFFF;
+    color: #2b2b2b;
+    margin-left: 20rpx;
+    border-radius: 48rpx;
+    text-align: center;
+    line-height: 100rpx;
+    text-align: center;
+    line-height: 70rpx;
+    font-size: 34rpx;
+    font-weight: 400;
+    box-shadow: 0 -40rpx 20rpx 32rpx rgba(0, 0, 0, 0.07), 0 80rpx 20rpx 32rpx rgba(0, 0, 0, 0.07);
+}

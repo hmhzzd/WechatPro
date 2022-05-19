@@ -1,0 +1,39 @@
+#item1 {
+  height: /* 116px */232rpx;
+  width: /*335px*/ 100%;
+  margin: 4rpx 0rpx;
+  /*border-radius: 10px;*/
+  background-color: rgb(229, 237, 238);
+}
+.touxiang {
+  width: 20%;
+  height: 120rpx;
+  margin-left: 40rpx;
+  /*background-color: black;*/
+  /*border: black 1px solid;*/
+}
+.msg {
+  /*display: inline-block;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  width: 60%;
+  height: 180rpx;
+  /*background-color: black;*/
+  border: #1f9af2 2rpx solid;
+  border-radius: 10rpx;
+  /* 文字效果 */
+  text-align: center;
+}
+#user {
+  width: 120rpx;
+  height: 120rpx;
+}
+.setting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*justify-content: center; */
+}

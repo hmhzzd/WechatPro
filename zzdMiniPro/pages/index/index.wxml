@@ -1,0 +1,80 @@
+<!-- 轮播图模块开始 -->
+<view class="swiper">
+    <swiper autoplay interval="4000" circular indicator-dots="true" indicator-active-color="#696969" indicator-color="rgb(236, 240, 241)" easing-function="linear">
+        <swiper-item>
+            <image mode="heightFix" src="https://s3.bmp.ovh/imgs/2022/04/06/cb7788ad770afcec.jpg" id="image"></image>
+        </swiper-item>
+        <swiper-item>
+            <image mode="aspectFill" src="https://s3.bmp.ovh/imgs/2022/04/01/444a4f220e306dcd.jpg" id="image"></image>
+        </swiper-item>
+        <swiper-item>
+            <image mode="aspectFill" src="https://static.lanqiao.cn/dasai/images/20201116/head-wz-13-2.png" id="image"></image>
+        </swiper-item>
+        <swiper-item>
+            <image mode="aspectFill" src="https://pic4.zhimg.com/80/v2-99cacd9d1e720b1520707d87d85ee80d_720w.jpg?source=1940ef5c" id="image"></image>
+        </swiper-item>
+        <swiper-item>
+            <image mode="aspectFill" src="https://pic2.zhimg.com/80/v2-fa4667a776cf1248889a8dc9866637b5_720w.jpg" id="image"></image>
+        </swiper-item>
+    </swiper>
+</view>
+<!--轮播图模块结束-->
+
+<!-- 新版导航栏 -->
+<view class="tools">
+    <button id="btn1" plain="true">
+        <navigator url="/pages/team/team">
+            <view id="imgBox1">
+                <image src="../../incos/dpu/team.png"></image>
+            </view>
+            <view id="text">组队</view>
+        </navigator>
+    </button>
+    <button id="btn2" plain="true">
+        <navigator url="/pages/share/share">
+            <view id="imgBox2">
+                <image src="../../incos/dpu/share.png"></image>
+            </view>
+            <view id="text">经验交流</view>
+        </navigator>
+    </button>
+    <button id="btn3" plain="true">
+        <!-- <view id="imgBox3">
+            <image src="../../incos/dpu/feedBack.png" id="img"></image>
+        </view>
+        <view id="text">反馈</view> -->
+        <view id="navigator" bindtap="hasuserInfo">
+            <view id="imgBox3">
+                <image src="../../incos/dpu/My.png"></image>
+            </view>
+            <view id="text">个人中心</view>
+        </view>
+    </button>
+</view>
+<!-- 导航栏结束 -->
+<!-- 组队信息 -->
+<scroll-view class="container1" hidden="{{!status}}" scroll-y>
+    <!-- 快速组队入口 -->
+    <view id="item">组队信息</view>
+    <view id="item1" class='setting' wx:for="{{msg}}" wx:for-item="item" wx:key="index">
+        <view class="touxiang">
+            <image id="user" src="{{item.avatarUrl}}" mode="widthFix"></image>
+            <view id="userName">{{item.userName}}</view>
+        </view>
+
+        <view class="msg">
+            <view id="needDetails">{{item.needDetails}}</view>
+            <view id="matchName">比赛类型: {{item.matchName}}</view>
+            <view id="tel">联系方式:
+                <view id="telDetail">{{item.tel}}</view>
+            </view>
+            <view id="data">{{item.createdDate}}</view>
+        </view>
+    </view>
+</scroll-view>
+<!-- 后台无数据时显示的内容 -->
+<view class="container2" hidden="{{status}}">
+    <view id="imgs">
+    </view>
+    <text>还没有人发布组队信息哟~</text>
+</view>

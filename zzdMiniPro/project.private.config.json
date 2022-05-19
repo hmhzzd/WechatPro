@@ -1,0 +1,75 @@
+{
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "发布组队信息",
+                    "pathName": "pages/new/new",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "123",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "组队",
+                    "pathName": "pages/team/team",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "经验交流",
+                    "pathName": "pages/share/share",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "评论",
+                    "pathName": "pages/review/review",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "分享经验",
+                    "pathName": "pages/addExperience/addExperience",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "个人中心",
+                    "pathName": "pages/myPage/myPage",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    },
+    "projectname": "Match_Infors",
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+    "setting": {
+        "urlCheck": false,
+        "coverView": true,
+        "compileHotReLoad": false,
+        "lazyloadPlaceholderEnable": false,
+        "preloadBackgroundData": false,
+        "autoAudits": false,
+        "useIsolateContext": true,
+        "useMultiFrameRuntime": true,
+        "useApiHook": true,
+        "useApiHostProcess": true,
+        "showShadowRootInWxmlPanel": true,
+        "useStaticServer": true,
+        "showES6CompileOption": false,
+        "checkInvalidKey": true
+    }
+}

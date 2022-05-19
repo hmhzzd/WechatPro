@@ -1,0 +1,26 @@
+{
+    "pages": [
+        "pages/welcome/welcome",
+        "pages/index/index",
+        "pages/new/new",
+        "pages/register/register",
+        "pages/team/team",
+        "pages/share/share",
+        "pages/advice/advice",
+        "pages/logs/logs",
+        "pages/search/search",
+        "pages/review/review",
+        "pages/addExperience/addExperience",
+        "pages/myPage/myPage",
+        "pages/deleteTeam/deleteTeam",
+        "pages/deleteEx/deleteEx"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#22D3EE",
+        "navigationBarTitleText": "比赛互助站",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+    
+}

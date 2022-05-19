@@ -1,0 +1,2 @@
+<textarea id="text" maxlength="100" bindinput="bindinput" value="" data-key="msg" placeholder="跟大家分享你的经验吧~" bindinput="bindinput" value="" data-key="msg"><view id="numberTips">最多输入100字哟~</view></textarea>
+<button catchtap="submit">发布</button>

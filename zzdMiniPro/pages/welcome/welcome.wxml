@@ -1,0 +1,20 @@
+<!--start.wxml-->
+<view class="container">
+	<view class="remind-box" wx:if="{{remind}}">
+	</view>
+	<block wx:else>
+		<view class="content">
+			<view class="hd" style="transform:rotateZ({{angle}}deg);">
+				<!-- <open-data class="logo" type="userAvatarUrl"></open-data> -->
+				<image class="logo" src="https://s3.bmp.ovh/imgs/2022/03/31/76bb4f719b056804.webp" />
+			</view>
+			<view class="bd">
+				<image class="smalltitle" src="https://s3.bmp.ovh/imgs/2022/03/31/acacdf11c4067c33.png"></image>
+				<view class="confirm-btn">
+					<button lang="zh_CN" bindtap="btn" plain="true">点击进入</button>
+				</view>
+				<view class="copyright">© {{year}}</view>
+			</view>
+		</view>
+	</block>
+</view>

@@ -1,0 +1,13 @@
+<view id="item1" wx:for="{{msg}}" wx:for-item="item" wx:key="index" hidden="{{!status}}" bindlongpress="delete" bindtap="tap">
+    <view id="imgBox_0">
+        <image id="user" src="{{item.avatarUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="msg" data-item="{{item}}">{{item.exDetails}}</view>
+</view>
+<!-- 后台无数据显示页面 -->
+<view class="container2" hidden="{{status}}">
+    <view id="imgs">
+    </view>
+    <text>你还没有发布经验哟~</text>
+    <view id="toNew">快去发布你的经验吧</view>
+</view>

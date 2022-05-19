@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    
+  },
+  "navigationBarTitleText": "比赛互助站",
+  "backgroundColor": "#E1F5FE",
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#c2e1fe",
+  "navigationBarTextStyle": "black",
+  "backgroundTextStyle": "dark"
+}

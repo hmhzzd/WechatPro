@@ -1,0 +1,21 @@
+<view id="item1" wx:for="{{msg}}" wx:for-item="item" wx:key="index" hidden="{{!status}}">
+    <view id="imgBox_0">
+        <image id="user" src="{{item.avatarUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="msg" bindtap="msgView" data-item="{{item}}">{{item.exDetails}}
+        <button id="imgBox_1" plain="true" bindtap="view" data-item="{{item}}">
+            <image src="../../incos/dpu/评论.png" lazy-load="false" id="good" />
+        </button>
+    </view>
+</view>
+<!-- 后台无数据显示页面 -->
+<view class="container2" hidden="{{status}}">
+    <view id="imgs">
+    </view>
+    <text>还没有人发布经验哟~</text>
+    <view id="toNew">快去发布你的经验吧</view>
+</view>
+<!-- 发表经验 -->
+<view id="addInput">
+    <button type="text" bindtap="hasuserInfo">发布我的经验</button>
+</view>

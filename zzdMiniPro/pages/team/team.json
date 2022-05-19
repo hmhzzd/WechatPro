@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "我要组队",
+  "navigationBarBackgroundColor": "#f5f5f5",
+  "navigationBarTextStyle": "black",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+  
+}

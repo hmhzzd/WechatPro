@@ -1,0 +1,4 @@
+<view class="search-input">
+    <input id="input-box" type="text" bindinput="handleInput" focus="true" confirm-type="search" placeholder="搜索"/>
+</view>
+<view>{{str}}</view>

@@ -1,0 +1,129 @@
+page {
+    height: auto;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    background-color: #c2e1fe;
+}
+
+#item1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 232rpx;
+    width: 700rpx;
+    margin: 10rpx 25rpx;
+    background-color: #f5f5f5;
+    position: relative;
+    border-radius: 24rpx;
+}
+
+#imgBox_0 {
+    align-self: center;
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 180rpx;
+}
+
+#user {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 180rpx;
+}
+
+.msg {
+    width: 570rpx;
+    min-height: 180rpx;
+    margin: 46rpx 0;
+    background-color: #ffff;
+    padding-left: 20rpx;
+    padding-top: 20rpx;
+    border-radius: 24rpx;
+    /* 文字换行 */
+    white-space: normal;
+    word-break: break-all;
+    overflow: auto;
+}
+
+.reviewBox {
+    width: 750rpx;
+    height: 232rpx;
+    background-color: #ffffff;
+    position: relative;
+    border-bottom: 4rpx #ecf0f1 solid;
+}
+
+.imgBox {
+    width: 80rpx;
+    height: 80rpx;
+    position: absolute;
+    top: 10rpx;
+    left: 10rpx;
+    border-radius: 180rpx;
+}
+
+.userImg {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 180rpx;
+}
+
+.reviewMsg {
+    position: absolute;
+    top: 10rpx;
+    left: 100rpx;
+    width: 640rpx;
+    height: 180rpx;
+    background-color: #ffff;
+    padding-left: 20rpx;
+    padding-top: 20rpx;
+    border-radius: 24rpx;
+    /* 文字换行 */
+    white-space: normal;
+    word-break: break-all;
+    overflow: auto;
+}
+
+/* 当页面无内容时的显示 */
+.container2 {
+    margin-top: 8rpx;
+    height: 920rpx;
+    width: 720rpx;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+    background-color: #ffffff;
+    position: relative;
+    top: 24rpx;
+    border-radius: 48rpx;
+}
+
+#imgs {
+    width: 400rpx;
+    height: 400rpx;
+    background-image: url(https://s3.bmp.ovh/imgs/2022/03/31/f2008f1f515d87f3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 24rpx;
+    right: 160rpx;
+}
+
+text {
+    position: absolute;
+    top: 460rpx;
+    right: 230rpx;
+    color: gray;
+    font-style: italic;
+    font-size: 24rpx;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+#toNew {
+    position: absolute;
+    top: 520rpx;
+    right: 220rpx;
+    width: 240rpx;
+    height: 40rpx;
+    font-size: 24rpx;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: rgb(54, 195, 250);
+}

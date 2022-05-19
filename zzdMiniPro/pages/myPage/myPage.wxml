@@ -1,0 +1,24 @@
+<view class="user">
+    <image id="userImg" src="{{avatarUrl}}"></image>
+    <view id="userName">{{userName}}</view>
+</view>
+<view class="data">
+    <view id="reviewData">
+        <view id="num">{{commentsCount}}</view>
+        <view id="info">评论数</view>
+    </view>
+    <view id="teamData">
+        <view id="num">{{teemNeedCount}}</view>
+        <view id="info">组队信息数</view>
+    </view>
+    <view id="exData">
+        <view id="num">{{exChangeCount}}</view>
+        <view id="info">发布经验数</view>
+    </view>
+</view>
+<view class="list">
+    <navigator id="teamInfo" class="details" url="/pages/deleteTeam/deleteTeam">我发布的组队信息</navigator>
+    <navigator id="Ex" class="details" url="/pages/deleteEx/deleteEx">我发布的经验</navigator>
+    <view id="developer" class="details">关于我们</view>
+    <button open-type="feedback" plain="true">意见反馈</button>
+</view>

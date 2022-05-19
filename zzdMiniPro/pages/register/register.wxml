@@ -1,0 +1,20 @@
+<view id="title">用户注册</view>
+<view id="from">
+  <view id="name">
+    <view class="header">姓名</view>
+    <input type="text" placeholder="请输入你的姓名" class="inputBox" bindinput="bindinputname" data-key="name"/>
+  </view>
+  <view id="number">
+    <view class="header">微信号</view>
+    <input type="text" placeholder="请输入你的微信号" class="inputBox" />
+  </view>
+  <view id="phonenum">
+    <view class="header">手机号</view>
+    <input type="number" placeholder="请输入你的手机号" class="inputBox" />
+  </view>
+  <view id="sex">
+    <view class="header">性别</view>
+    <input type="text" placeholder="性别" class="inputBox" />
+  </view>
+</view>
+<button bindtap="sumbit">提交</button>
